@@ -195,13 +195,19 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                       <form class="contact-one__form contact-form-validated form-one wow fadeInUp"
+                      <form class="contact-one__form contact-form-validated form-one wow fadeInUp"
       data-wow-delay="300ms"
       action="https://api.web3forms.com/submit"
-      method="POST">
-  
-  <!-- Web3Forms access key -->
+      method="POST"
+      id="contact-form">
+
+  <!-- Web3Forms Access Key -->
   <input type="hidden" name="access_key" value="8db6a548-17df-44a4-85fa-012480da6867">
+
+  <!-- Success Message -->
+  <div id="result-message" style="display:none; margin-bottom: 15px; color: green; font-weight: bold;">
+    Your message has been sent successfully.
+  </div>
 
   <div class="contact__bg" style="background-image: url(assets/images/shapes/contact-bg-shape.png);"></div>
 
@@ -221,7 +227,6 @@
         <select class="selectpicker" id="subject-select" name="subject" required>
           <option value="">Select Subject</option>
           <option value="Auto Tinting">Auto Tinting</option>
-		    <option value="Auto Tinting">Headlight/Taillight Tinting</option>
           <option value="Detailing">Detailing</option>
           <option value="Headlight Restoration">Headlight Restoration</option>
         </select>
@@ -240,6 +245,32 @@
 
   </div>
 </form>
+
+<!-- Web3Forms Script -->
+<script>
+  const form = document.getElementById('contact-form');
+  const resultMessage = document.getElementById('result-message');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        resultMessage.style.display = 'block';
+        form.reset();
+      } else {
+        alert("There was a problem submitting the form.");
+      }
+    }).catch(error => {
+      alert("There was a problem submitting the form.");
+    });
+  });
+</script>
+
                     </div>
                 </div>
             </div>
