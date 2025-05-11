@@ -1,4 +1,2 @@
 User-agent: *
 allow:
-
-Sitemap: https://www.nawabtint.com/sitemap.xml
