@@ -5,38 +5,46 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://www.nawabtint.com/</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/about.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/about.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/window-tint.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/window-tint.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/headlight-tint.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/headlight-tint.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/detailing.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/detailing.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/restoration.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/restoration.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.nawabtint.com/contact.html</loc>
-  <lastmod>2025-05-11T14:40:34+00:00</lastmod>
+  <loc>https://nawabtint.com/contact.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+<url>
+  <loc>https://nawabtint.com/tint.html</loc>
+  <lastmod>2025-05-14T14:01:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
