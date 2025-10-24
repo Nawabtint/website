@@ -47,31 +47,35 @@
 </head>
 
 <body class="custom-cursor">
-<dialog id="underConstructionPopup">
-        <h2>🚧 Page Under Construction! 🏗️</h2>
-        <p>We're building a new website. Please check back soon!</p>
-  
-        
-        <button onclick="document.getElementById('underConstructionPopup').close()">
-            I Understand
-        </button>
+	
+<dialog id="permanentPopup">
+        <h2 style="color: red;">🛑 ACCESS DENIED!</h2>
+        <h1 style="font-family: monospace;">🚧 SITE PERMANENTLY UNAVAILABLE 🚧</h1>
+        <p>This page is currently under major, long-term construction and is **inaccessible**.</p>
+        <p>You must navigate away from this page to continue.</p>
+        <br>
+        <p style="color: gray; font-size: small;">(There is no close button on purpose.)</p>
     </dialog>
 
-
+    <h1>Main Content</h1>
+    <p>This content is now blocked by the `<dialog>` element.</p>
 
     <script>
         // Get the dialog element
-        const dialog = document.getElementById('underConstructionPopup');
-
-        // Show the dialog modally (blocks page interaction) when the page loads
+        const popup = document.getElementById('permanentPopup');
+        
         window.onload = function() {
-            if (dialog) {
-                dialog.showModal();
+            if (popup) {
+                // showModal() is key: it centers the dialog and blocks ALL interaction 
+                // with the content behind it, which is the "blur all the back page"
+                // equivalent when you can't use CSS for actual blurring.
+                popup.showModal();
             }
         };
-
-        // Note: You can also use dialog.show() to show it non-modally.
+        
+        // IMPORTANT: No script is provided to close the dialog, making it permanent.
     </script>
+	
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
@@ -535,4 +539,5 @@
 </body>
 
 </html>
+
 
